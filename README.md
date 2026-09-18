@@ -49,7 +49,10 @@ Base overrides USB to TinyUSB (`ARDUINO_USB_MODE=0`) for HID+CDC. First upload m
 5. **Short-press ARM** again → RESET then ARM for the next clue.
 6. Press **HOST** button (or long-press ARM in single-button mode) to type the configured key (default **space**) into the focused host app.
 
-Optional monitor:
+Optional monitors:
+
+- **Web UI (Web Serial):** open [`host/web/index.html`](host/web/index.html) in Chrome/Edge via a local server (see that page’s hint), click **Connect base**, pick the XIAO CDC port.
+- **CLI:**
 
 ```bash
 cd host && pip install -r requirements.txt
@@ -73,6 +76,7 @@ jeopardy-buzzer/
   host/
     serial_monitor.py
     requirements.txt
+    web/index.html   # Web Serial buzz-order UI
 ```
 
 ## Protocol
